@@ -1,8 +1,8 @@
 guard 'shell' do
-  watch(/layouts\/(.+)/) { `nebel` }
-  watch(/static\/(.+)/)  { `nebel` }
-  watch(/posts\/(.+)/)   { `nebel` }
-  watch(/plugins\/(.+)/) { `nebel` }
+  watch(/layouts\/(.+)/) { `nebel -b ''` }
+  watch(/static\/(.+)/)  { `nebel -b ''` }
+  watch(/posts\/(.+)/)   { `nebel -b ''` }
+  watch(/plugins\/(.+)/) { `nebel -b ''` }
 end
 
 guard 'livereload' do
