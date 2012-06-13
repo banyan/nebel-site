@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[banyan.github.com]]></title>
+  <link href="http://banyan.github.com/atom.xml" rel="self"/>
+  <link href="http://banyan.github.com/"/>
+  <updated>2012-06-07T23:00:00+09:00</updated>
+  <id>http://banyan.github.com/</id>
+  <author>
+    <name><![CDATA[banyan.github.com]]></name>
+
+  </author>
+  <generator uri="https://github.com/mizzy/stellar/">Stellar</generator>
+
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-06-07T23:00:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+<p>Working with Unix Processes の Daemon Processes を社内勉強会で読んだ。
+以前さらっと読んだ時はふんふん...なるほどーとか読みながら読めたけど
+すごい忘れてるし、そもそもじっくり話しながら読んだら自分は全然理解できてないことが分かった。</p>
+
+<p>ので改めて読んでメモしとく。
+まだ理解曖昧な部分はアップデートしていきたい</p>
+
+<script src="https://gist.github.com/2889128.js"> </script>
+
+]]></content>
+  </entry>
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-06-07T10:57:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+<p>Github を会社で使っています。とても快適です。</p>
+
+<p>Github を会社で使えますよー、というのは求人条件とかに書いてもいいと思う。</p>
+
+<p>それはさておき、今は Business Plans の Bronze の Plan を使っています。</p>
+
+<p>Bronze Plan では 10個の Private Repository を作成することができますが、
+そのひとつのリポジトリに対して、デプロイキー (公開鍵) を設定することができますが、
+Github は公開鍵は全体で一意のものしか登録ができません。</p>
+
+<p>したがって、リポジトリAを例えば CI サーバから取得するみたいな時に、
+CI サーバの鍵を登録してしまうと、リポジトリBには同じ鍵を登録することができません。</p>
+
+<p>もっといい方法があるかもしれませんが、今はデプロイだけをするユーザを新規作成して、
+そのユーザを organization に追加して (Pull Only の権限)、そのユーザ自身の公開鍵を普通に SSH Keys から設定しておくことでこの問題を回避しています。
+(秘密鍵を新しく作るサーバに配置する必要はあります)</p>
+
+]]></content>
+  </entry>
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-04-19T18:47:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+<p><a href="https://github.com/jugyo/tunnels">tunnels</a> is awesome which enables us runnning pow over SSL.</p>
+
+<pre><code>$ gem install tunnels
+$ sudo tunnels (just to use)
+</code></pre>
+
+<p>And it&#39;s better to work in the background by launchd.</p>
+
+<pre><code>$ sudo vi /Library/LaunchDaemons/org.rubygems.tunnels.plist
+</code></pre>
+
+<script src="https://gist.github.com/2420053.js"> </script>
+
+]]></content>
+  </entry>
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-04-19T18:47:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+<p><a href="https://github.com/jugyo/tunnels">tunnels</a> is awesome which enables us runnning pow over SSL.</p>
+
+<pre><code>$ gem install tunnels
+$ sudo tunnels (just to use)
+</code></pre>
+
+<p>And it&#39;s better to work in the background by launchd.</p>
+
+<pre><code>$ sudo vi /Library/LaunchDaemons/org.rubygems.tunnels.plist
+</code></pre>
+
+<script src="https://gist.github.com/2420053.js"> </script>
+
+]]></content>
+  </entry>
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-04-19T02:19:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+
+]]></content>
+  </entry>
+
+  <entry>
+    <title type="html"><![CDATA[]]></title>
+    <link href="http://banyan.github.com/"/>
+    <updated>2012-04-17T03:23:00+09:00</updated>
+    <id>http://banyan.github.com/ </id>
+    <content type="html"><![CDATA[
+<p><a href="http://github.com/mizzy/stellar/">Stellar</a> (A static site generator) と Skelton (CSS framework) を使ってブログじゃないけど始めてみる。</p>
+
+<p><a href="http://higelog.brassworks.jp/?p=2076">Nanoc以外の静的サイト生成ツールを調べてみた</a></p>
+
+<p>色々種類がありすぎて、どれを使うか悩みますけど、Stellar は機能がすごい削いであるのでとりあえずこれで始めて慣れてみたい。</p>
+
+<p>しかしながら MT とか WordPress とかあって、一周して、ここまで削がれた感をすごい感じます。</p>
+
+<p>もうちょっとデザインを調整したいのと、それでもはてなよりはすでに書きやすいなぁ。</p>
+
+<p>英語でもちょこちょこエントリを書いていきたい</p>
+
+]]></content>
+  </entry>
+
+
+</feed>

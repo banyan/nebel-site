@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>{% if index != true %}{{ title }} - {% endif %}banyan.github.com</title>
+	<title>banyan.github.com</title>
 	<meta name="description" content="">
 	<meta name="author" content="Kohei Hasegawa">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -58,30 +58,36 @@
     <div class="sixteen columns autopagerize_page_element">
 
       <div class="sixteen columns entry-title-container">
-        <h1 class="entry-title"><a href="{{ link }}">{{ title }}</a></h1>
+        <h1 class="entry-title"><a href="/2012/06/07/2">Working with Unix Processes の Daemon Processes を社内勉強会で読んだメモ</a></h1>
       </div>
 
       <div class="sixteen columns">
         <div class="three columns alpha">
           <span class="time">
-            <time>{{ date_formatted }}</time>
+            <time>Jun 7<span>th</span>, 2012</time>
           </span>
         </div>
         <div id="main-content" class="thirteen columns omega" style="background-color: #adedd7">
           <div class="content inner">
-            {{ content }}
+            <p>Working with Unix Processes の Daemon Processes を社内勉強会で読んだ。
+以前さらっと読んだ時はふんふん...なるほどーとか読みながら読めたけど
+すごい忘れてるし、そもそもじっくり話しながら読んだら自分は全然理解できてないことが分かった。</p>
+
+<p>ので改めて読んでメモしとく。
+まだ理解曖昧な部分はアップデートしていきたい</p>
+
+<script src="https://gist.github.com/2889128.js"> </script>
+
           </div>
         </div>
       </div>
 
       <div class="pagination">
-        {% if next_page %}
-        <a href="{{ next_page.link }}" rel="next">next post</a>
-        {% endif %}
+        
+        <a href="/2012/06/07/1" rel="next">next post</a>
+        
 
-        {% if prev_page %}
-        <a href="{{ prev_page.link }}">previous post</a>
-        {% endif %}
+        
       </div>
     </div>
     <div class="autopagerize_insert_before"></div>
