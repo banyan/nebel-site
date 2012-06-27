@@ -1,8 +1,9 @@
 guard 'shell' do
-  watch(/layouts\/(.+)/) { `nebel -b ''` }
-  watch(/static\/(.+)/)  { `nebel -b ''` }
-  watch(/posts\/(.+)/)   { `nebel -b ''` }
-  watch(/plugins\/(.+)/) { `nebel -b ''` }
+  cmd = "nebel -b '' --no-clean-dir"
+  watch(/layouts\/(.+)/) { `#{cmd}` }
+  watch(/static\/(.+)/)  { `#{cmd}` }
+  watch(/posts\/(.+)/)   { `#{cmd}` }
+  watch(/plugins\/(.+)/) { `#{cmd}` }
 end
 
 guard 'livereload' do
