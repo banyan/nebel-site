@@ -10,7 +10,7 @@ date: 2012-10-24 02:16:41 +0900
 
 ### 現象
 
-#### poltergeist を使っている場合
+#### [poltergeist](https://github.com/jonleighton/poltergeist) を使っている場合
 
 * js => true にしていると1つ目のテストは通るが js => true にしている2つ目のテストは落ちる
 * 正確にいうと奇数のテストは通るが、偶数のテストは落ちる
@@ -27,7 +27,7 @@ PhantomJS has crashed. Please read the crash reporting guide at https://code.goo
 * capybara (1.1.2)
 * poltergeist (1.0.1)
 
-#### capybara-webkit を使っている場合
+#### [capybara-webkit](https://github.com/thoughtbot/capybara-webkit) を使っている場合
 
 * はじめに Capybara::Driver::Webkit::WebkitNoResponseError がでて以降は Errno::EPIPE: Broken pipe が出て全て死ぬ
 
