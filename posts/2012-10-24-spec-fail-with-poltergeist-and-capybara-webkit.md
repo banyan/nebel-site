@@ -10,7 +10,7 @@ date: 2012-10-24 02:16:41 +0900
 
 ### 現象
 
-#### poltergeist (A PhantomJS driver for Capybara) を使っている場合
+#### poltergeist を使っている場合
 
 * js => true にしていると1つ目のテストは通るが js => true にしている2つ目のテストは落ちる
 * 正確にいうと奇数のテストは通るが、偶数のテストは落ちる
