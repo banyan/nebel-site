@@ -37,7 +37,7 @@ Team には今のところ3つの権限がある。
   <tr>
     <th>Push & Pull</th>
     <td>yes</td>
-    <td>no</td>
+    <td>yes</td>
     <td>no</td>
   </tr>
   <tr>
@@ -53,3 +53,11 @@ Team には今のところ3つの権限がある。
     <td>yes</td>
   </tr>
 </table>
+
+---
+
+<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/banyan">banyan</a> <a href="http://t.co/Cr83XmsBb8" title="http://banyan.github.io/2012/06/23/1/">banyan.github.io/2012/06/23/1/</a> ですが、現在は Push &amp; Pull でも Pull Request できるみたいです。</p>&mdash; m4i (@m4i) <a href="https://twitter.com/m4i/status/325230152978161664">April 19, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* 以前は Push & Pull で Pull Request できなかったのですが、@m4i さんに教えて頂いたのでできるように変更しました。(2013/05/26 updated)
+* なお、自分のアカウントに対して fork すれば Pull Request は可能。プライベートリポジトリの場合でも fork してもカウントされない。
