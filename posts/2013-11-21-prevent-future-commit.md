@@ -26,7 +26,7 @@ $ git config --global init.templatedir '~/.git_template'
 
 を実行した後、
 
-https://gist.github.com/banyan/7574810 (Mac のみ対応)
+https://gist.github.com/banyan/7574810
 
 を ~/.git_template/hooks 以下とかに pre-commit という名前で実行権限つけて保存すればOK。
 新規のリポジトリを作る際は hooks 以下に pre-commit というファイルができていれば OK で、既存のリポジトリに適用させる場合は git init で reinitialize すればよかった。
